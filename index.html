@@ -129,10 +129,14 @@
     <!-- questo part end -->
 
     <!-- questo-bottom part start -->
-    <marquee direction="rtl" behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
-      <span>digital advertising <img src="assets/img/star.svg" alt=""> UX MARKETING</span> 
-      <span><img src="assets/img/star.svg" alt=""> marketing automation <img src="assets/img/star.svg" alt=""> EMAIL MARKETING</span>
-      <span>convertion rate optimisation  <span><img src="assets/img/star.svg" alt=""> funnel marketing</span>
+    <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+      digital advertising <img src="assets/img/star.svg" alt=""> UX MARKETING
+    </marquee>
+    <marquee behavior="scroll" direction="right" onmouseover="this.stop();" onmouseout="this.start();"> 
+      <img src="assets/img/star.svg" alt=""> marketing automation <img src="assets/img/star.svg" alt=""> EMAIL MARKETING
+    </marquee>
+    <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();"> 
+      convertion rate optimisation  <span><img src="assets/img/star.svg" alt=""> funnel marketing
     </marquee>
     <!-- questo-bottom part end -->
 
@@ -254,9 +258,9 @@
         function Scrolling(e) {
           let getTheParcentige = Math.round((window.scrollY / height) * 100);
           circleShape.setAttribute('data-id', getTheParcentige)
-          circleShape.style.top = (getTheParcentige - 40)+"px"
-          circleShape.style.right = (getTheParcentige * 5)+"px"
-          lineShape.style.transform = "rotate(-"+getTheParcentige+"deg)"; 
+          circleShape.style.top = (getTheParcentige * 4)+"px"
+          circleShape.style.right = (getTheParcentige * 4)+"px"
+          // lineShape.style.transform = "rotate(-"+getTheParcentige+"deg)"; 
         }
         window.addEventListener('scroll', (e) => Scrolling(e))
       })

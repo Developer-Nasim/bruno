@@ -172,8 +172,11 @@ ul li {
   height: 100px;
   background: #ED6B23;
   border-radius: 60%;
-  position: relative;
+  position: absolute;
   margin-left: auto;
+  margin-top: -205px;
+  right: 0;
+  margin-right: 65px;
 }
 .shape_line {
   display: block;
@@ -181,9 +184,11 @@ ul li {
   height: 15px;
   background: #4F8C54;
   transform-origin: center; 
+  transform: rotate(-45deg);
 }
 .shapes {
   width: 380px;
+  position: relative;
 }
 
 
@@ -251,9 +256,7 @@ marquee {
   display: flex;
 }
 
-marquee span {
-  display: flex;
-  align-items: center;
+marquee span { 
   text-align: center;
   justify-content: center;
   margin-bottom: 10px;
